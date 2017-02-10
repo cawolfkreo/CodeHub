@@ -3,29 +3,25 @@ package DTOS;
 import java.util.Date;
 
 /**
- * Clase que representa un paciente
+ * Clase que representa un marcapasos
  * Created by ln.bello10 on 10/02/2017.
  */
-public class PacienteDTO {
+public class MarcapasosDTO {
 
     //--------------------------------------------------------------
     //                          ATRIBUTOS
     //--------------------------------------------------------------
 
     /**
-     * identificador del paciente
+     * identificador del marcapasos
      */
     private int id;
 
     /**
-     * nombre del paciente
+     * ritmo cardiaco que tiene el marcapasos
      */
-    private String nombre;
+    private int ritmoCardiaco;
 
-    /**
-     * grupo sanguineo del paciente
-     */
-    private String grupoSanguineo;
 
     //--------------------------------------------------------------
     //                          Constructores
@@ -34,20 +30,18 @@ public class PacienteDTO {
     /**
      * Constructor vacio de la clase.
      */
-    public PacienteDTO() {
+    public MarcapasosDTO() {
     }
 
     /**
      * Constructor con todos los atributos de la clase.
      * @param id
-     * @param nombre
-     * @param grupoSanguineo
+     * @param ritmoCardiaco
      */
 
-    public PacienteDTO(int id, String nombre, String grupoSanguineo) {
+    public MarcapasosDTO(int id, int ritmoCardiaco) {
         this.id = id;
-        this.nombre = nombre;
-        this.grupoSanguineo = grupoSanguineo;
+        this.ritmoCardiaco = ritmoCardiaco;
     }
 
     public int getId() {
@@ -58,19 +52,11 @@ public class PacienteDTO {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getRitmoCardiaco() {
+        return ritmoCardiaco;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getGrupoSanguineo() {
-        return grupoSanguineo;
-    }
-
-    public void setGrupoSanguineo(String grupoSanguineo) {
-        this.grupoSanguineo = grupoSanguineo;
+    public void setRitmoCardiaco(int ritmoCardiaco) {
+        this.ritmoCardiaco = ritmoCardiaco;
     }
 }
