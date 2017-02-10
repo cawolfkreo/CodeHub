@@ -55,4 +55,68 @@ public class EmergenciaDTO {
         this.ubicacion_latitud = ubicacion_latitud;
         this.ubicacion_longitud = ubicacion_longitud;
     }
+
+    /**
+     * da la fecha de la emergencia
+     * @return la fecha de la emergencia.
+     */
+    public Date getFecha() {
+        return fecha;
+    }
+
+    /**
+     * modifica la fecha de la emergencia.
+     * @param fecha la nueva fecha para la emergencia. fecha != null && fecha >= 1/1/1850.
+     */
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    /**
+     * da el mensaje de estado de la emergencia.
+     * @return el mensaje de estado.
+     */
+    public String getEstado() {
+        return estado;
+    }
+
+    /**
+     * modifica el mensaje de estado de la emergencia.
+     * @param estado el nuevo mensaje de estado. estado != null && estado != "".
+     */
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    /**
+     * da la latitud de la ubicacion de la emergencia.
+     * @return latitud de la ubicacion de la emergencia.
+     */
+    public int getUbicacion_latitud() {
+        return ubicacion_latitud;
+    }
+
+    /**
+     * modifica la latitud de la ubicacion de la emergencia.
+     * @param ubicacion_latitud la nueva ubicacion de la emergencia. ubicacion_latitud != null.
+     */
+    public void setUbicacion_latitud(int ubicacion_latitud) {
+        this.ubicacion_latitud = ubicacion_latitud;
+    }
+
+    /**
+     * da la longitud de la ubicacion de la emergencia.
+     * @return longitud de la ubicacion de la emergencia.
+     */
+    public int getUbicacion_longitud() {
+        return ubicacion_longitud;
+    }
+
+    /**
+     * modifica la longitud de la ubicacion de la emergencia.
+     * @param ubicacion_longitud la nueva ubicacion de la emergencia. ubicacion_longitud != null.
+     */
+    public void setUbicacion_longitud(int ubicacion_longitud) {
+        this.ubicacion_longitud = ubicacion_longitud;
+    }
 }
