@@ -3,7 +3,6 @@ package DTOS;
 import java.util.Date;
 
 /**
- * Clase que representa un marcapasos
  * Created by ln.bello10 on 10/02/2017.
  */
 public class MedicoDetailDTO extends MedicoDTO{
